@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Layer2 from "../images/Layer2.png";
 import Layer3 from "../images/Layer3.png";
 import Layer8 from "../images/Layer8.png";

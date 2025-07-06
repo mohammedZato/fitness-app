@@ -6,6 +6,7 @@ function GlobalState({ children }) {
   const [openSidebar, setOpenSidebar] = useState(false);
   const [serviceDropdown, setServiceDropdown] = useState(false);
   const [trainersDropdown, setTrainersDropdown] = useState(false);
+  const [contactDropdown, setContactDropdown] = useState(false);
 
   console.log(serviceDropdown);
   return (
@@ -17,6 +18,8 @@ function GlobalState({ children }) {
         setServiceDropdown,
         trainersDropdown,
         setTrainersDropdown,
+        contactDropdown,
+        setContactDropdown,
       }}
     >
       {children}

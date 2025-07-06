@@ -1,12 +1,14 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import Logo from "./logo";
 import Navbar from "./navigation";
 import Service from "./serviceDropdown";
 import { FitnessData } from "../context";
 import Trainers from "./trainersDrowdown";
+import Contacts from "./contactsDropdown";
 
 export default function Header() {
-  const { serviceDropdown, trainersDropdown } = useContext(FitnessData);
+  const { serviceDropdown, trainersDropdown, contactDropdown } =
+    useContext(FitnessData);
 
   return (
     <>
@@ -15,6 +17,7 @@ export default function Header() {
         <Navbar />
         {serviceDropdown && <Service />}
         {trainersDropdown && <Trainers />}
+        {contactDropdown && <Contacts />}
       </div>
     </>
   );

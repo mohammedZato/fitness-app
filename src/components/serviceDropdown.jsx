@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { FitnessData } from "../context";
 
 export default function Service() {
@@ -9,7 +9,7 @@ export default function Service() {
       <div
         onMouseOver={() => setServiceDropdown(true)}
         onMouseLeave={() => setServiceDropdown(false)}
-        className="w-60 border-none rounded-md bg-gray-400 px-4 py-4 text-black absolute top-[75px] left-[500px]"
+        className="w-60 border-none rounded-md bg-gray-400 px-4 py-4 text-black absolute top-[75px] left-[570px]"
       >
         <h2 className="text-xl mb-2 hover:scale-105 transition-transform duration-500 cursor-pointer">
           WeightLifting

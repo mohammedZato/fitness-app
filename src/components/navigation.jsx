@@ -4,8 +4,12 @@ import Arrowdown from "../images/ArrowDown.svg";
 import { FitnessData } from "../context";
 
 export default function Navbar() {
-  const { setOpenSidebar, setServiceDropdown, setTrainersDropdown } =
-    useContext(FitnessData);
+  const {
+    setOpenSidebar,
+    setServiceDropdown,
+    setTrainersDropdown,
+    setContactDropdown,
+  } = useContext(FitnessData);
 
   return (
     <>
@@ -44,7 +48,10 @@ export default function Navbar() {
             <h3 className="text-gray-100 font-sm">Pricing</h3>
           </NavLink>
         </li>
-        <li>
+        <li
+          onMouseOver={() => setContactDropdown(true)}
+          onMouseLeave={() => setContactDropdown(false)}
+        >
           <NavLink className="flex items-center gap-2">
             <h3 className="text-gray-100 font-sm">Contact</h3>
             <img src={Arrowdown} alt="" />
